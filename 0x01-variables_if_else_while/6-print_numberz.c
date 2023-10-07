@@ -1,16 +1,20 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-    int i = 0;
+	int num = 0;
 
-    while (i < 10)
-    {
-        putchar(i + 48); // ASCII value of '0' is 48
-        i++;
-    }
+	while (num <= 9)
+	{
+		putchar(num + '0');
+		putchar('\n');
+		num++;
+	}
 
-    putchar('\n');
-
-    return (0);
+	return (0);
 }
