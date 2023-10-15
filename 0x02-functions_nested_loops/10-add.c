@@ -1,24 +1,17 @@
-#include <unistd.h>  /* Included for the write() function */
+#include “main.h”
 
 /**
- * _putchar - Writes a character to the standard output (file descriptor 1).
- * @c: The character to be written.
+ * Add _ add two integers
  *
- * Return: On success, the number of characters written. On error, -1 is returned.
- */
-int _putchar(char c)
-{
-	return write(1, &c, 1);
-}
+ * @a: first input
+ *@b: second input
+ *
+ * Return: sum of a & b
+*/
 
-/**
- * add - Adds two integers.
- * @a: The first integer to be added.
- * @b: The second integer to be added.
- *
- * Return: The result of adding a and b.
- */
 int add(int a, int b)
 {
-	return a + b;
+Int sum = a + b;
+
+return (sum);
 }

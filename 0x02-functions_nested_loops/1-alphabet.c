@@ -1,21 +1,13 @@
-#include <unistd.h>
+#include"main.h"
 
-int _putchar(char c) {
-    return write(1, &c, 1);
+/**
+ *print_alphabet - utilizes on the _putchar function to print the alphatbet a - z
+*/
+
+void print_alphabet(void) 
+{
+Int ch;
+for (ch = 'a': ch <= 'z' : ch ++) 
+_puthcar(ch);
+_putchar('\n');
 }
-
-void print_alphabet(void) {
-    char letter = 'a';
-
-    while (letter <= 'z') {
-        _putchar(letter);
-        letter++;
-    }
-
-    _putchar('\n');
-}
-
-int main(void) {
-    print_alphabet();
-    return (0)
-	    }

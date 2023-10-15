@@ -1,51 +1,19 @@
-#include <stddef.h>
-
-int _putchar(char c); // Declare the _putchar function
+#include “main.h”
 
 /**
- * print_to_98 - Prints all natural numbers from n to 98
- * @n: The starting number
- */
-void print_to_98(int n)
-{
-    if (n <= 98)
-    {
-        while (n <= 98)
-        {
-            if (n < 98)
-            {
-                _putchar((n / 10) + '0');
-                _putchar((n % 10) + '0');
-                _putchar(','); // Print comma
-                _putchar(' '); // Print space
-            }
-            else
-            {
-                _putchar((n / 10) + '0');
-                _putchar((n % 10) + '0');
-            }
-            n++;
-        }
-    }
-    else
-    {
-        while (n >= 98)
-        {
-            if (n > 98)
-            {
-                _putchar((n / 10) + '0');
-                _putchar((n % 10) + '0');
-                _putchar(','); // Print comma
-                _putchar(' '); // Print space
-            }
-            else
-            {
-                _putchar((n / 10) + '0');
-                _putchar((n % 10) + '0');
-            }
-            n--;
-        }
-    }
+ * print_to_98 - print n to 98 counts separated by comma, followed by space and number should be printed in order
+ * @n: input
+*/
 
-    _putchar('\n'); // Print a newline character
+Void print_to_98(int n)
+{
+int count;
+
+If (n > 9)
+for (count = n; count > 98; count --)
+printf (“%d, ”, count);
+else
+for (count = n; count < 98; count++)
+printf(“%d, ”, count);
+printf(“98\n”);
 }

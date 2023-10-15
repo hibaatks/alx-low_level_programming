@@ -1,48 +1,40 @@
-#include <unistd.h>
+#include “main.h”
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * times_table- print the 9 times table
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-    return write(1, &c, 1);
-}
+ * Exemple table
+ *0,0,0,0,..
+ *0,1,2,3,..
+ *
+*/
 
-/**
- * times_table - prints the 9 times table, starting with 0
- */
 void times_table(void)
 {
-    int i, j, result;
+int num, mult, prod;
 
-    for (i = 0; i <= 9; i++)
-    {
-        for (j = 0; j <= 9; j++)
-        {
-            result = i * j;
+for (num= 0; num <= 9; num++)
+{
+_putchar(48);
+for (mult = 1; mult <= 9; mult++)
+{
+-putchar(‘,’);
+_putchar(' ');
 
-            if (j != 0)
-            {
-                _putchar(',');
-                _putchar(' ');
-            }
 
-            if (result >= 10)
-            {
-                _putchar(result / 10 + '0');
-                _putchar(result % 10 + '0');
-            }
-            else
-            {
-                if (j != 0)
-                    _putchar(' ');
-                _putchar(result + '0');
-            }
-        }
-        _putchar('\n');
-    }
+Prod = num * mult;
+
+
+/*
+ * put space f product is a single number
+ * place the first digit if its two numbers
+*/
+if (prod <= 9)
+_putchar(‘ ’);
+else
+_putchar((prod / 10) + 48); /*get the first digit*/
+_putchar((prod % 10) + 48); /*get the second digit*/
+}
+_putchar(‘\n’);
+}
 }

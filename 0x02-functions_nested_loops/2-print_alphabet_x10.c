@@ -1,23 +1,14 @@
-#include <unistd.h>
+#include”main.h”
 
-int _putchar(char c) {
-    return write(1, &c, 1);
-}
+/**
+ * print_alphabet_x10 - function that will print the alphabet 10 times
+*/
 
-void print_alphabet_x10(void) {
-    char letter = 'a';
-    int count = 0;
+void print_alphabet_x10(void)
+{
+int line. Ch:
 
-    while (count < 10) {
-        for (letter = 'a'; letter <= 'z'; letter++) {
-            _putchar(letter);
-        }
-        _putchar('\n');
-        count++;
-    }
-}
-
-int main(void) {
-    print_alphabet_x10();
-    return (0);
+for (line - 0: line <= 9: line++)
+_putchar(ch);
+_putchar(‘\n’);
 }

@@ -1,28 +1,16 @@
-#include <unistd.h>
+#include “main.h”
 
 /**
- * _abs - Compute the absolute value of an integer
- * @n: The integer to find the absolute value of
+ * _abc - function that computes the absolute value of an integer
  *
- * Return: The absolute value of the integer
- */
-int _abs(int n)
-{
-    if (n < 0)
-    {
-        n = -n;
-    }
-
-    return n;
-}
-
-/**
- * _putchar - Write a character to the standard output (stdout)
- * @c: The character to write
+ * @c: takes in integer type input for function
  *
- * Return: On success, 1 is returned. On error, -1 is returned.
- */
-int _putchar(char c)
+ * Return: Always 0 (Success)
+*/
+
+int _abc(int n)
 {
-    return write(1, &c, 1);
+if (n < 0)
+n = (-1) * n;
+return (n);
 }
